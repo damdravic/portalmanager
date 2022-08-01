@@ -1,18 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LayoutsModule } from './layouts/layouts.module';
+import { HttpClientModule } from '@angular/common/http';
+import { AuthenticationService } from './services/authentication.service';
+import { NotifierModule } from 'angular-notifier';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    LayoutsModule,
+    MatSidenavModule,
+    HttpClientModule,NotifierModule, BrowserAnimationsModule
   ],
-  providers: [],
+  providers:[
+    AuthenticationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

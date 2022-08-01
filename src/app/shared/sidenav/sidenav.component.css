@@ -1,0 +1,26 @@
+.sidenav{
+    height: 100%;
+    padding:0px;
+    width: 200px;
+
+}
+
+.sidenav ul{
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.sidenav-link {
+    text-align: center;
+    font-size: medium;
+    color: green;
+    list-style: none;
+    text-decoration: none;
+    padding:10px;
+}
+
+.fa-fw {
+   padding  : 15px;
+   color :black;
+}
