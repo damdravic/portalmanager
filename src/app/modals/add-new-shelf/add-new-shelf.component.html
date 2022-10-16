@@ -1,0 +1,72 @@
+<div class="container ">
+
+
+           <div class="panel  ">
+
+            <div class="panel-header  d-flex justify-content-end">
+                
+                 <h2 style="align-self: end;"> Adauga un nou raft </h2>
+                
+            </div>
+
+            
+            
+            <hr>
+            
+
+            <div class="panel-body ">
+                <form #shelfForm="ngForm" (ngSubmit)="addNewShelf(shelfForm)">
+
+
+
+                    <div class="form-group py-3 row">
+                        <label class="col-4 control-label" for="shelfName">Denumire / Numar</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" name="shelfName" id="shelfName">
+                        </div>
+                    </div>
+
+                    <div class="form-group pmy-3 row">
+                        <label class="col-4 control-label" for="location">Locatie</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" name="location" id="location">
+                        </div>
+                    </div>
+
+                    <div class="form-group py-3 row">
+                        <label class="col-4 control-label" for="nummberOfRow">Nr Randuri</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" name="nummberOfRow" id="nummberOfRow">
+                        </div>
+                    </div>
+
+                    <div class="form-group py-3 row">
+                        <label class="col-4 control-label" for="nummberOfColumns">Nr Coloane</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" name="nummberOfColumns" id="nummberOfColumns">
+                        </div>
+                    </div>
+
+                    <div class="form-group py-3 row">
+                        <label class="col-4 control-label" for="capacity">Capacitate</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control" name="capacity" id="capacity">
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="d-flex justify-content-end">
+
+                        <button class="btn btn-primary">Creeaza raft</button>
+                    </div>
+
+
+
+                </form>
+
+            </div>
+            
+           </div>
+
+
+</div>

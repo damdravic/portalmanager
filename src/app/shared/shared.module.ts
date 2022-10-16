@@ -4,6 +4,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
+import { TopHeaderComponent } from './top-header/top-header.component';
+import { top } from '@popperjs/core';
 
 
 
@@ -11,14 +13,17 @@ import { RouterModule } from '@angular/router';
   declarations: [
     SidenavComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    TopHeaderComponent
+    
   ],
   imports: [
     CommonModule,
     RouterModule
   ],exports:[
     SidenavComponent,
-    HeaderComponent
+    HeaderComponent,
+    TopHeaderComponent
   ]
 })
 export class SharedModule { }

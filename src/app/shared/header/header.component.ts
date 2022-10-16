@@ -1,4 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { AddNewShelfComponent } from 'src/app/modals/add-new-shelf/add-new-shelf.component';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +12,7 @@ export class HeaderComponent implements OnInit {
 
 extended:boolean=false;
 
-  constructor() { }
+  constructor( private modalService : NgbModal) { }
 
   ngOnInit(): void {
   }
@@ -21,5 +23,15 @@ extended:boolean=false;
     this.sidebarStatus.emit();
 
   }
+
+
+  addNewShelf(){
+            this.modalService.open(AddNewShelfComponent,{size:'md'});
+  }
+
+  
+
+
+
 
 }

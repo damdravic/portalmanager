@@ -9,6 +9,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { LayoutAreasModule } from '../layout-areas/layout-areas.module';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { TyrePageComponent } from './tyre-page/tyre-page.component';
 
 
 
@@ -17,7 +18,8 @@ import { SharedModule } from '../shared/shared.module';
     LoginComponent,
     LandingComponent,
     RegisterComponent,
-    MainPageComponent
+    MainPageComponent,
+    TyrePageComponent
   ],
   imports: [
     CommonModule,

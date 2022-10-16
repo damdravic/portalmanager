@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AuthenticationService } from './services/authentication.service';
 import { NotifierModule } from 'angular-notifier';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AddNewShelfComponent } from './modals/add-new-shelf/add-new-shelf.component';
 
 
 
@@ -16,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
+    AddNewShelfComponent,
   ],
   imports: [
     BrowserModule,

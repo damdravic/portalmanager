@@ -1,0 +1,56 @@
+.cardcontainer{
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+float:left;
+
+}
+
+.photo{
+    height: 150px;
+    width: 100%;
+}
+
+.photo img{
+    height: 100%;
+    width: 100%;
+}
+
+.shelftitle{
+    margin :5px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+table{
+    margin: 0 auto; 
+}
+.shelfbadge{
+    margin: 0px 20% 0px 20%;
+    background-color: orangered;
+    border-radius: 10px;
+}
+
+
+
+ table tr td{
+    width: 50%;
+    padding:2px;
+    text-align: center;
+
+
+}
+hr{
+    margin :10px;
+}
+
+.footer{
+    text-align: center;
+}
+button{
+    margin : 0 auto;
+}
